@@ -250,8 +250,8 @@ def register():
         #%% Linkedin skills
         #import getpass
         
-        username1 = 'junxiaozhu@gmail.com'#raw_input("Enter your linkedin username : ")
-        password1 = 'linkedin1qazse4'#getpass.getpass("Enter your linkedin password : ")
+        username1 = '321@gmail.com'#raw_input("Enter your linkedin username : ")
+        password1 = '1234'#getpass.getpass("Enter your linkedin password : ")
        
         
         linkedin_link = 'https://www.linkedin.com/in/junxiao-zhu-35a26257'
