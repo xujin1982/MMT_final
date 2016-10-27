@@ -1,0 +1,21 @@
+<!doctype html>
+<title>MMT contest submit form</title>
+{% from "_field.html" import render_field %}
+<form method="POST" action="{{ url_for('register') }}">
+  {{ form.hidden_tag() }}
+  <table>
+    {{ render_field(form.First_name) }}
+    {{ render_field(form.Last_name) }}
+    {{ render_field(form.Email) }}
+    {{ render_field(form.Phone_num) }}
+    {{ render_field(form.Street_name) }}
+    {{ render_field(form.House_number) }}
+    {{ render_field(form.Apartment_num) }}
+    {{ render_field(form.City) }}
+    {{ render_field(form.Zipcode) }}
+    {{ render_field(form.Amount) }}
+    {{ render_field(form.Annual_inc) }}
+    {{ render_field(form.accept_terms) }}
+  </table>
+  {{ form.submit }}
+</form>
