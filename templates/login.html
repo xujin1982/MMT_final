@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+    <style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+</head>
+<title>MMT contest result form</title>
+{% with messages = get_flashed_messages() %}
+    <h1><div style="font-size:300%">{{ messages[0] }}</div></h3>
+    <h2><div style="font-size:34px">{{ messages[1] }}</div></h2>
+    <h2><div>{{ messages[2] }}</div></h2>
+    {% for message in messages[3:] %}
+        <h3><div>{{ message }}</div></h3>
+    {% endfor %}
+    
+    <table >
+        <tr><th>Facebook Likes</th></tr>
+        {% for message in messages[3:] %}
+            <tr><td>{{ message }}</td></tr>
+        {% endfor %}
+    </table>
+{% endwith %}
